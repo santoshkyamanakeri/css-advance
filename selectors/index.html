@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* universal selector */
+        /* * {
+            background: red;
+        } */
+        /* type selector  */
+        /* div {
+            background: greenyellow;
+        } */
+        /* class selectors */
+        /* .red {
+            background: yellow;
+        } */
+        /* id selectors */
+        /* #demo {
+            background: blue;
+        } */
+
+        /* combine different together selectors    */
+        /* div.red {
+            background: khaki;
+            color: aqua;
+        } */
+        /* all type senario */
+        /* span, li {
+            background: gold;
+        } */
+        /* select elements inside the element */
+        /* ul li {
+            background: firebrick
+        }
+        div b{
+            background: firebrick;
+        } */
+        /* child selectors */
+        /* div > b {
+            background: teal;
+        } */
+        /* sibling selectors */
+        /* li.red ~ li {
+            background: palevioletred;
+        }
+        li.red + li {
+            background: palevioletred;
+        } */
+        /* pceudo class selectors (there are 2 types 1)hover 2)focus */
+        /* li:hover {
+            background: fuchsia;
+        } */
+        input:focus {
+            background: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <div class="red">This is a div</div>
+    <span id="demo">This is a span</span>
+    <div>
+        <span>
+            <b>nested text</b>
+        </span>
+    </div>
+    <ul>
+        <li class="red">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>
